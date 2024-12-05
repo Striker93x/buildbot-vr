@@ -55,7 +55,6 @@ server {
 		proxy_read_timeout 6000s;
 	}
 
-	#FIXME: CrossReference not in DEV.
 	# Cross-reference
 	location /cr/ {
 		proxy_pass http://${NGINX_CR_HOST_WG_ADDR};
